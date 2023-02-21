@@ -1,0 +1,13 @@
+id,category,name,parent,plu,department,defText,active
+1,groups,deli,0,,,,TRUE
+2,groups,meat,1,,,,TRUE
+3,groups,cheese,1,,,,FALSE
+4,groups,bakery,0,,,,
+5,items,turkey,2,1234,1,smoked turkey,TRUE
+6,items,dounut,4,345,2,glazed dounut,
+7,items,gift card,0,98,1,sdjfghwi,FALSE
+8,groups,,0,,,,
+9,items,thing,0,1,,,
+10,items,thing2,0,,1,,
+11,items,thing3,,5,2,,
+12,groups,BLAH,,,,,

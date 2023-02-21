@@ -1,0 +1,2 @@
+C:\Users\User\RiderProjects\csvToJsonTest\keyOrgCsvToJsonConverter\bin\Release\net6.0\win-x86\publish\keyOrgCsvToJsonConverter.pdb
+C:\Users\User\RiderProjects\csvToJsonTest\keyOrgCsvToJsonConverter\bin\Release\net6.0\win-x86\publish\keyOrgCsvToJsonConverter.exe
