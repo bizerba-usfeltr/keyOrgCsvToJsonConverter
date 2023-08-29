@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using System.Globalization;
+using System.Text.Json.Nodes;
 using CsvHelper;
 using CsvHelper.Configuration;
 using keyOrgCsvToJsonConverter;
@@ -64,12 +65,11 @@ try
         i.groups = groupList.Where(n => n.parent == i.id).ToList();
         i.items = itemList.Where(n => n.parent == i.id).ToList();
     }
-    
-    List<Object> roots = new List<object>();
-    roots.Add(groupList.Where(n => n.parent == 0).ToList());
-    roots.Add(itemList.Where(n => n.parent == 0).ToList());
 
-    File.WriteAllText(args[1], JsonConvert.SerializeObject(roots));
+    Dictionary<string, List<Group>> root = new Dictionary<string, List<Group>>();
+    root.Add("groups", groupList.Where(n => n.parent == 0).ToList());
+    File.WriteAllText(args[1], JsonConvert.SerializeObject( root ) );
+    
 }
 catch (Exception e)
 {
